@@ -1,38 +1,281 @@
-.App {
+/* BACKGROUND COLOR */
+
+body {
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/*------- HEADER/ H1 ------*/
+
+.Header {
+  display: block;
+  margin: 0 auto;
   text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: hsl(188, 55%, 28%);
+  font-size: 47px;
+  margin-bottom: 10px;
+  display: inline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ---------MAIN BODY -----------------*/
+
+.main {
+  background-image: url("./gameboy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 483px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* ------LAST UPDATED-------*/
+.timeandday {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom: 13px;
+  color: #ba71ae;
+}
+
+/* ------HUMIDITY-------*/
+.humidity-text {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 75px;
+  right: 40px;
   color: white;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* ------WIND------*/
+.wind-text {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 75px;
+  left: 40px;
+  color: white;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ------CITY-------*/
+.city {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+/* ------DESCRIPTION------*/
+.description {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 120px;
+  color: #20656f;
+}
+
+/* ------DEGREES------*/
+.degrees {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 145px;
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: #20656f;
+  right: 7px;
+}
+
+.units {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: #20656f;
+  left: 99px;
+}
+
+/*------MAIN ICON---------------*/
+
+.main-icon {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 40px;
+  right: 113px;
+}
+
+/*------EXTENDED FORECAST-----------*/
+.column {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  display: inline-table;
+  position: relative;
+  bottom: 35px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+.hour-one {
+  margin: 0 auto;
+}
+
+.boldweather {
+  font-weight: bolder;
+  font-family: system-ui;
+}
+
+.weather-icon {
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*----------SEARCH FORM-------------*/
+
+.form-div {
+  text-align: center;
+  margin: 0 auto;
+  display: inline;
+  position: relative;
+  top: 145px;
+}
+
+input {
+  border: white solid 5px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-button {
+  background-color: #9fdae1;
+  border: #9fdae1 solid 5px;
+  color: #20656f;
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#search-button:hover {
+  cursor: pointer;
+}
+
+#search-button:focus {
+  outline: none;
+}
+
+/*--CURRENT LOCATION BUTTON---*/
+
+#location {
+  color: black;
+  font-family: "ROBOTO MONO";
+  font-size: 29px;
+  font-weight: bolder;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: 150px;
+  left: 257px;
+  border: solid #43bdd0;
+  background-color: #43bdd0;
+  border-radius: 25px;
+}
+
+#location:focus {
+  outline: 0;
+}
+
+#location:hover {
+  cursor: pointer;
+}
+
+/*----FAHRENHEIT AND CELSIUS--------*/
+
+#fahrenheit {
+  background-color: #43bdd0;
+  color: black;
+  font-family: "ROBOTO MONO";
+  font-size: 27px;
+  font-weight: bolder;
+  border: 10px solid #43bdd0;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: 94px;
+  left: 255px;
+}
+
+#fahrenheit:focus {
+  outline: 0;
+}
+
+#fahrenheit:hover {
+  cursor: pointer;
+}
+
+#celsius {
+  background-color: #eae72c;
+  color: black;
+  font-family: "ROBOTO MONO";
+  font-size: 27px;
+  font-weight: bolder;
+  border: 11px solid #eae72c;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: 174px;
+  left: 328px;
+}
+
+#celsius:focus {
+  outline: 0;
+}
+
+#celsius:hover {
+  cursor: pointer;
+}
+/* ------------FOOTER-------------------- */
+
+.codedby {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: #1f616a;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
