@@ -3,7 +3,7 @@ import Header from "./Header.js";
 import Weather from "./Weather.js";
 import Description from "./Description.js";
 import ExtendedForecast from "./ExtendedForecast";
-
+import Footer from "./Footer.js";
 
 export default function App() {
   return (
@@ -42,24 +42,7 @@ export default function App() {
         <button id="celsius">ºC</button>
       </div>
       {/* Footer */}
-      <footer>
-        <p className="codedby">
-          <a
-            href="https://github.com/LauraEmilia33/weather-app"
-            target="_blank"
-            rel="noreferrer"
-            alt="Github link"
-          >Open Source</a> by <a
-            href="https://www.linkedin.com/in/laura-emilia-barojas/"
-            target="_blank"
-            rel="noreferrer"
-            alt="LinkedIn link"
-          >
-            Laura Barojas
-          </a>
-          <img src="./me.png" width="15px" height="20px" alt="" />
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
