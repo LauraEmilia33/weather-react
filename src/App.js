@@ -49,11 +49,7 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
             alt="Github link"
-          >
-            Open Source
-          </a>
-          by
-          <a
+          >Open Source</a> by <a
             href="https://www.linkedin.com/in/laura-emilia-barojas/"
             target="_blank"
             rel="noreferrer"
@@ -61,7 +57,7 @@ export default function App() {
           >
             Laura Barojas
           </a>
-          <img src="resources/me.png" width="15px" height="20px" alt="" />
+          <img src="./me.png" width="15px" height="20px" alt="" />
         </p>
       </footer>
     </div>
